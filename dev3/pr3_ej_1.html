@@ -28,6 +28,9 @@
         li {
             margin-bottom: 0.4rem;
         }
+        table, th, td {
+            border: 1px solid rgb(163, 110, 110);
+        }
     </style>
 </head>
 <body>
@@ -68,7 +71,7 @@
 
         <li>&lt;audio&gt;</li>
 
-        <p>Click para escuchar un buen audio</p>
+        <p>Click para escuchar un buen audio.</p>
 
         <audio controls>
           <source src="tiktok.mp3" type="audio/mp3">
@@ -76,18 +79,103 @@
         </audio>
 
         <li>&lt;b&gt;</li>
+
+        <p>Esto, quizas no es relevante, pero<b> esto sí</b>.</p>
+
         <li>&lt;base&gt;</li>
+        
+        <!-- Al utilizar el base otros formatos se corrompen-->
+
         <li>&lt;bdi&gt;</li>
+
+        <p>En el ejemplo a continuación, se muestran los nombres de usuario junto con la cantidad de puntos en un concurso. Si el elemento bdi no es compatible con el navegador, el nombre de usuario del usuario árabe generaría confusión en el texto (el algoritmo bidireccional colocaría los dos puntos y el número "90" junto a la palabra "Usuario" en lugar de junto a la palabra "puntos").</p>
+
+        <ul>
+        <li>User <bdi>kress</bdi>: 60 points</li>
+        <li>User <bdi>parches</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>
+
         <li>&lt;bdo&gt;</li>
+
+        <p>El texto de abajo ira de izquierda a derecha.</p>  
+        <p><bdo dir="rtl">Milanesa</bdo></p>  
+
         <li>&lt;blockquote&gt;</li>
+
+        <p>Una cita de la página oficial de Valve:</p>
+
+        <blockquote cite="https://www.valvesoftware.com/en/?job_cat=game-design">
+        Siempre estamos contratando. Contratamos personas con amplias habilidades y una amplia experiencia. Si bien en Valve nadie tiene un puesto fijo, siempre buscamos contratar en ciertos campos.
+        </blockquote>
+
         <li>&lt;body&gt;</li>
+
+        <p> Este texto se encuentra dentro del body </p>
+    
         <li>&lt;br&gt;</li>
+
+        <p>Hago saltos<br>en la línea<br>de texto<br>usando<br> el br</p>
+
         <li>&lt;button&gt;</li>
+
+        <button type="button" onclick="alert('Gracias por clickear')">Clickea aca!</button>
+
         <li>&lt;canvas&gt;</li>
+
+        <canvas id="myCanvas" width="150" height="75" style="border:1px solid rgb(255, 0, 0)"></canvas>
+
         <li>&lt;caption&gt;</li>
+
+        <table>
+            <caption>Score!</caption>
+            <tr>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+            </tr>
+            <tr>
+              <td>kress999</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>parches</td>
+              <td>200</td>
+            </tr>
+          </table>
+
         <li>&lt;cite&gt;</li>
+
+        <img src="bachira.jpg" width="100" height="150" alt="Bachira">
+        <p><cite>Bachira Meguru</cite> by Muneyuki Kaneshiro</p>  
+
         <li>&lt;code&gt;</li>
+
+        <p>En HTML el<code> button</code> sirve para definir un botón clickeable</p>
+
         <li>&lt;col&gt;</li>
+
+        <table>
+            <colgroup>
+              <col span="2" style="background-color:rgb(81, 148, 187)">
+              <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+              <th>DNI</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+            </tr>
+            <tr>
+              <td>46039921</td>
+              <td>Joaquín</td>
+              <td>Vignolo</td>
+            </tr>
+            <tr>
+              <td>42892512</td>
+              <td>Valentín</td>
+              <td>Albertinazzi</td>
+            </tr>
+          </table>
+
         <li>&lt;colgroup&gt;</li>
         <li>&lt;data&gt;</li>
         <li>&lt;datalist&gt;</li>
