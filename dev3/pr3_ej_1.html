@@ -376,13 +376,69 @@
         <p>El meta da información a los navegadores, se ubica en el encabezado.</p>
 
         <li>&lt;meter&gt;</li>
+
+        <label for="suerte">Suerte:</label>
+        <meter id="suerte" value="8" min="0" max="10"></meter><br>
+        
+        <label for="manos">Manos:</label>
+        <meter id="manos" value="0.1"></meter>
+
         <li>&lt;nav&gt;</li>
+
+        <nav>
+          <a href="https://www.instagram.com/">Instagram</a> y
+          <a href="https://www.tiktok.com/">TikTok</a>
+          </nav>
+
         <li>&lt;noscript&gt;</li>
+
+        <p>Si el usuario no tiene el AntiCheat abierto le saltara un mensaje de que no se puede ingresar.</p>
+
+        <script>
+        document.write("¡Bienvenido!")
+        </script>
+        <noscript>No se puede iniciar el juego.</noscript>
+
         <li>&lt;object&gt;</li>
+
+        <p>El objetc sirve para contener un recurso externo, como una imágen, video, etc.</p>
+        <object data="gojo.jpg" width="100" height="100"></object>
+
         <li>&lt;ol&gt;</li>
-        <li>&lt;optgroup&gt;</li>
-        <li>&lt;option&gt;</li>
+
+        <p>Sirve para ordenar una lista de forma númerica o alfabética</p>
+        <ol start="234">
+          <li>Jorge</li>
+          <li>Luis<i>
+          <li>Claudio</li>
+        </ol>
+
+        <li>&lt;optgroup y option&gt;</li>
+
+        <form action="/action_page.php">
+          <label for="Laptops">Elegí tu Laptop:</label>
+          <select name="laptops" id="laptops">
+            <optgroup label="HP">
+              <option value="Ryzen5">Ryzen 5</option>
+              <option value="Ryzen7">Ryzen 7</option>
+            </optgroup>
+            <optgroup label="Acer">
+              <option value="nitro5">Intel 5</option>
+              <option value="nitro7">Intel 7</option>
+            </optgroup>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+
         <li>&lt;output&gt;</li>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" id="a" value="0">
+          +<input type="number" id="b" value="100">
+          =<output name="x" for="a b"></output>
+          </form>
+
         <li>&lt;p&gt;</li>
         <li>&lt;param&gt;</li>
         <li>&lt;pre&gt;</li>
