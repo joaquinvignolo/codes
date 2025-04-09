@@ -32,7 +32,7 @@
             border: 1px solid rgb(163, 110, 110);
         }
         .myDiv {
-          border: 5px outset rgb(243, 213, 239);
+          border: 5px outset rgb(200, 150, 170);
           background-color: lightblue;    
           text-align: center;
         }
@@ -256,11 +256,26 @@
 
         <li>&lt;embed&gt;</li>
 
-        <embed type="image/jpg" src="kan.jpg" width="150" height="100">
+        <embed type="image/jpg" src="kan.jpg" width="100" height="100">
 
         <li>&lt;fieldset&gt;</li>
-        <li>&lt;figcaption&gt;</li>
-        <li>&lt;figure&gt;</li>
+
+        <fieldset>
+          <legend>Cuestionario</legend>
+          <label for="Invocador">Nombre de Invocador</label>
+          <input type="text" id="Invocador" name="Invocador"><br><br>
+          <label for="Rol">Rol</label>
+          <input type="text" id="Rol" name="Rol"><br><br>
+          <input type="submit" value="Submit">
+         </fieldset>
+
+        <li>&lt;figcaption y figure&gt;</li>
+
+        <figure>
+          <img src="momo.jpg" alt="Momo" style="width:100%">
+          <figcaption>Fig.1 - Geronimo Benavides, Italia.</figcaption>
+        </figure>
+
         <li>&lt;footer&gt;</li>
         <li>&lt;form&gt;</li>
         <li>&lt;h1&gt;</li>
