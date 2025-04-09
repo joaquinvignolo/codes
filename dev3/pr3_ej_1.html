@@ -285,17 +285,6 @@
           <a href="https://www.youtube.com/@kress999">Canal de Youtube.</a></p>
         </footer>
 
-        <li>&lt;h1&gt;</li>
-        <li>&lt;h2&gt;</li>
-        <li>&lt;h3&gt;</li> <!-- Estos son encabezados-->
-        <li>&lt;h4&gt;</li>
-        <li>&lt;h5&gt;</li>
-        <li>&lt;h6&gt;</li>
-        <li>&lt;head&gt;</li>
-        <li>&lt;header&gt;</li>
-
-        <li>&lt;hr&gt;</li>
-
         <p>Claramente</p>
         <hr>
         <p>Clara no me quería</p>
@@ -566,17 +555,65 @@
         </table>
 
         <li>&lt;template&gt;</li>
+
+        <p>Porfavor no clickees el botón de abajo.</p>
+
+        <button onclick="showContent()">NO TOCAR</button>
+        
+        <template>
+          <h2>AAAAAAA!</h2>
+          <img src="Jeffthekillermonster.webp" width="214" height="204">
+        </template>
+        
+        <script>
+        function showContent() {
+          let temp = document.getElementsByTagName("template")[0];
+          let clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+        </script>
+
         <li>&lt;textarea&gt;</li>
-        <li>&lt;tfoot&gt;</li>
-        <li>&lt;thead&gt;</li>
+
+        <form action="/action_page.php">
+          <p><label for="w3review">¿Qué te parece esta página?</label></p>
+          <textarea id="w3review" name="w3review" rows="4" cols="50">Da ocote.</textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        
+        <p>Gracias por tu gran opinión.</p>
+
         <li>&lt;time&gt;</li>
+
+        <p>Mi cumple es<time datetime="2005-05-18 18:00"> el día que no figura aquí.</time>.</p>
+
         <li>&lt;title&gt;</li>
+
+        <p>Aca va el título.</p>
+
         <li>&lt;track&gt;</li>
+
+        <p>Agrega subtítulos.</p>
+
         <li>&lt;u&gt;</li>
-        <li>&lt;ul&gt;</li>
+
+        <p>A veces sirve <u>subrayar</u> algo.</p>
+
         <li>&lt;var&gt;</li>
+
+        <p>La fórmula del área de un círculo es <var>π</var><var>r</var><sup>2</sup>.</p>
+
         <li>&lt;video&gt;</li>
+
+        <video width="320" height="240" controls>
+          <source src="gta.mp4" type="video/mp4">
+        </video>
+        
         <li>&lt;wbr&gt;</li>
+
+        <p>Visita nuestro sitio web: www.ejemplo<wbr>.com/osito<wbr>tierno<wbr>super<wbr>crack.html</p>
+
     </ul>
 </body>
 </html>
