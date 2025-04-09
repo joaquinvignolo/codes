@@ -84,7 +84,7 @@
 
         <li>&lt;base&gt;</li>
         
-        <!-- Al utilizar el base otros formatos se corrompen-->
+        <p>Al utilizar el base otros formatos se corrompen</p>
 
         <li>&lt;bdi&gt;</li>
 
@@ -111,7 +111,7 @@
 
         <li>&lt;body&gt;</li>
 
-        <p> Este texto se encuentra dentro del body </p>
+        <p> Este texto se encuentra dentro del body! Al igual que todo lo demas... </p>
     
         <li>&lt;br&gt;</li>
 
@@ -177,13 +177,67 @@
           </table>
 
         <li>&lt;data&gt;</li>
+
+        <ul>
+          <li><data value="21">Queso</data></li>
+          <li><data value="22">Salame</data></li>
+        </ul>
+
         <li>&lt;datalist&gt;</li>
-        <li>&lt;dd&gt;</li>
+
+          <label for="pais">Elegí tu país:</label>
+          <input list="paises" name="pais" id="pais">
+          <datalist id="paises">
+            <option value="Argentina">
+            <option value="Perú">
+            <option value="Bolivia">
+            <option value="Brasil">
+            <option value="Uruguay">
+          </datalist>
+          <input type="submit">
+        </form>
+        
+        <p><strong>Nota:</strong> No se te enviará a la siguiente página debido a que se necesita un php.</p>
+
+        <li>&lt;dd, dt, dl&gt;</li>
+
+        <p>Creamos una lista con descripción con estos 3 items:</p>
+
+        <dl>
+          <dt>Azucar</dt>
+          <dd>Negra</dd>
+          <dt>Té</dt>
+          <dd>Manzana</dd>
+        </dl>
+
         <li>&lt;del&gt;</li>
+
+        <p>Amo el <del>té</del> <ins>café</ins>!</p>
+
         <li>&lt;details&gt;</li>
+
+        <details>
+          <summary>Frieren</summary>
+          <p>Es una elfa que ha vivido más de mil años y que junto al Grupo de los Cuatro Héroes, acompañada del Paladín Himmel, el Sacerdote Heiter y el Guerrero enano Eisen, fueron los responsables de salvar al mundo tras derrotar al Rey Demonio.</p>
+        </details>        
+
         <li>&lt;dfn&gt;</li>
+
+        <p><dfn>Frieren</dfn> también es la protagonista principal de la serie de manga y anime "Sōsō no Frieren"</p>
+
         <li>&lt;dialog&gt;</li>
+
+        <p><p>
+
+        <dialog open>Un dialogo y nada mas.</dialog>
+        
+        <p>.</p>
+        <p>.</p>
+
         <li>&lt;div&gt;</li>
+
+        
+
         <li>&lt;dl&gt;</li>
         <li>&lt;dt&gt;</li>
         <li>&lt;em&gt;</li>
