@@ -1,4 +1,4 @@
-def removeDuplicates(nums):
+def eliminarduplicados(nums):
     if not nums:
         print("La lista está vacía.")
         return 0
@@ -15,6 +15,6 @@ entrada = input("Ingresá una lista de números separados por coma: ")
 nums = list(map(int, entrada.split(','))) #convierte los strings en int separados por coma
 nums.sort() #ordena la lista de menor a mayor
 
-k = removeDuplicates(nums)
+k = eliminarduplicados(nums)
 print(f"\nCantidad de elementos únicos: {k}")
-print(f"Nueva lista: {nums[:k]}")
+print(f"Nueva lista (Sin duplicados): {nums[:k]}")
