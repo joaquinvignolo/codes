@@ -14,3 +14,35 @@ body {
     letter-spacing: 0.5px;     
     color: #ffffff;
     }
+
+.contenedor {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 30vh; /* Altura de toda la ventana */
+    background-color: #000000;
+    flex-direction: row;
+    }
+
+.caja {
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.rosa {
+    background-color: rgb(249, 179, 216);
+  }
+  
+  .morado {
+    background-color: rgb(114, 19, 172);
+  }
+  
+  .rojo {
+    background-color: rgb(255, 0, 0);
+  }
