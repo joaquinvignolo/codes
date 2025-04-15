@@ -1,6 +1,13 @@
-.caja {
-    background-color: rgb(88, 51, 74);
+body {
+    background-image: url("momogarch.jpg");
+    background-color: black;
+    background-size: cover;            /* Se adapta al tamaño */
+    background-position: center;       /* Centra la imagen */
+    background-repeat: no-repeat;      /* No la repite */
+    height: 100vh;                     /* Altura mínima de la ventana */
+    margin: 0;
     padding: 20px;
-    border: 2px solid black;
-    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
     }
