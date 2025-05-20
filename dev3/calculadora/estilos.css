@@ -5,46 +5,81 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .calculadora {
   background-color: #232526;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 0 24px rgba(0,0,0,0.5);
+  padding: 32px 28px 28px 28px;
+  border-radius: 20px;
+  box-shadow: 0 0 32px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #pantalla {
-  width: 100%;
-  padding: 12px;
-  font-size: 1.6rem;
-  margin-bottom: 14px;
+  width: 260px;
+  padding: 16px;
+  font-size: 2rem;
+  margin-bottom: 18px;
   text-align: right;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #18191a;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2) inset;
+  outline: none;
 }
 
 .botones {
   display: grid;
-  grid-template-columns: repeat(4, 60px);
-  gap: 12px;
+  grid-template-columns: repeat(4, 64px);
+  grid-template-rows: repeat(5, 56px);
+  gap: 14px;
+  justify-content: center;
 }
 
 button {
-  padding: 16px;
-  font-size: 1.2rem;
+  padding: 0;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #414345 0%, #232526 100%);
   color: #fff;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 button:hover {
   background: #5a5a5a;
+  color: #ffd700;
+  transform: scale(1.06);
+}
+
+/* Botón igual (=) destacado */
+button:nth-child(15) {
+  background: linear-gradient(135deg, #ffd700 0%, #ff9800 100%);
+  color: #232526;
+  font-weight: bold;
+}
+
+button:nth-child(15):hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+/* Botón limpiar (C) y retroceso (⌫) destacados */
+button:nth-child(17),
+button:nth-child(18) {
+  background: linear-gradient(135deg, #ff5252 0%, #b71c1c 100%);
+  color: #fff;
+  font-weight: bold;
+}
+
+button:nth-child(17):hover,
+button:nth-child(18):hover {
+  background: #b71c1c;
   color: #ffd700;
 }
