@@ -15,3 +15,7 @@ function calcular() {
     pantalla.value = 'Error';
   }
 }
+
+function retroceso() {
+  pantalla.value = pantalla.value.slice(0, -1);
+}
